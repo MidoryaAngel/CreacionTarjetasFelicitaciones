@@ -1,0 +1,172 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header {
+    background-color: #ff6f61;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    border-radius: 5px;
+  }
+  
+  .controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+    margin: 20px 0;
+  }
+  
+  .step {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #theme, #bgColor, #name, #title, #message {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .frames-options {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Estilos de los marcos */
+  #frame1 {
+    border: 5px solid #ff6f61;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  
+  #frame2 {
+    border: 3px dashed #4caf50;
+    padding: 10px;
+    background: #e8f5e9;
+  }
+  
+  #frame3 {
+    border: 5px double #673ab7;
+    padding: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .frame {
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .frame:hover {
+    transform: scale(1.1);
+    background-color: #ffe0b3;
+  }
+  
+  .selected {
+    border-color: #ff6f61;
+    background-color: #ffebe6;
+  }
+  
+  /* Uniformar el tamaño de las imágenes */
+  .image-options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .image-options img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-options img:hover {
+    transform: scale(1.1);
+  }
+  
+  .image-options img.selected {
+    border-color: #ff6f61;
+  }
+  
+  #generate {
+    padding: 10px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #generate:hover {
+    background-color: #e85b50;
+  }
+  
+  #output {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  #selectedFrame {
+    margin-bottom: 15px;
+  }
+  
+  #selectedFrame img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  #cardTitle {
+    font-size: 24px;
+    color: #ff6f61;
+  }
+  
+  #cardMessage {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  #cardName {
+    font-style: italic;
+    color: #777;
+  }
+  
+  /* Marcos aplicados al resultado */
+  .frame1 {
+    border: 5px solid #ff6f61;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  
+  .frame2 {
+    border: 3px dashed #4caf50;
+    padding: 15px;
+    background: #e8f5e9;
+  }
+  
+  .frame3 {
+    border: 5px double #673ab7;
+    padding: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  }
+  

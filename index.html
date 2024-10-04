@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creador de Tarjetas de Felicitación</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Crea tu tarjeta de Felicitación</h1>
+  </header>
+
+  <section class="controls">
+    <div class="step">
+      <label for="theme">❤Elige un Tema:</label>
+      <select id="theme">
+        <option value="valentine">San Valentín</option>
+        <option value="birthday">Cumpleaños</option>
+        <option value="navidad">Navidad</option>
+      </select>
+    </div>
+
+    <div class="step">
+      <label for="bgColor">🖌Color de Fondo:</label>
+      <input type="color" id="bgColor" value="#f3e5f5">
+    </div>
+
+    <div class="step">
+      <label>🖼 Elige un Marco:</label>
+      <div class="frames-options">
+        <div class="frame" id="frame1">Marco 1</div>
+        <div class="frame" id="frame2">Marco 2</div>
+        <div class="frame" id="frame3">Marco 3</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <label>📷 Elige una Imagen:</label>
+      <div class="image-options">
+        <!-- Las imágenes se cargarán dinámicamente aquí -->
+      </div>
+    </div>
+
+    <div class="step">
+      <label for="name">🖋Datos:</label>
+      <input type="text" id="name" placeholder="Capture el nombre de la persona">
+      <input type="text" id="title" placeholder="Capture un título">
+      <textarea id="message" rows="4" placeholder="Capture el cuerpo del mensaje"></textarea>
+    </div>
+
+    <button id="generate">Generar Felicitación</button>
+  </section>
+
+  <section id="output">
+    <div id="card">
+      <div id="selectedFrame">
+        <img src="" alt="Imagen Seleccionada" id="selectedImage">
+      </div>
+      <h2 id="cardTitle"></h2>
+      <p id="cardMessage"></p>
+      <p id="cardName"></p>
+    </div>
+  </section>
+
+  <script src="./javascript/function.js"></script>
+</body>
+</html>
